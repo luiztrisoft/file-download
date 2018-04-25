@@ -24,7 +24,6 @@ public class FileResource {
 	@Autowired
 	private ServletContext servletContext;
 
-	// http://localhost:8080/download?fileName=nome.extensao
 	@RequestMapping("/download")
 	public ResponseEntity<InputStreamResource> downloadFile1(@RequestParam String fileName) throws IOException {
 
